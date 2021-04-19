@@ -9,7 +9,7 @@ def MM(pretrained=False):
     '''
     mm = _MM()
     if pretrained:
-        url = 'https://github.com/lyuwenyu/paddlehub_demo/releases/tag/v1.0/params.pd'
+        url = 'https://github.com/lyuwenyu/paddlehub_demo/releases/downloads/v1.0/params.pd'
         path = paddle.utils.download.get_weights_path_from_url(url)
         mm.set_state_dict(paddle.load(path))
     return mm
